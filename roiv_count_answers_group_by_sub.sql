@@ -26,7 +26,8 @@ from (
 		--where str_number in ('501', '502', '503', '514')
 		) r1
 		on (titul.id = r1.id)
-	where str_num = '1'
+	--where str_num = '1'
+	where str_num in ('1','2','3')
 	group by sub_name, str_num
 ) roiv
 order by x1_total desc
